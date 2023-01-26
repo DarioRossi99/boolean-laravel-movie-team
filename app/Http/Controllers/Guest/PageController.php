@@ -4,18 +4,18 @@ namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-// use App\Models\train;
+use App\Models\film;
 
 class PageController extends Controller {
     
     function home() {
 
-        // $train = train::all();
+        $film = film::all();
 
-        // dump($train);
+        dump($film);
 
         return view('home',[
-            // "train" => $train,
+            "film" => $film,
         ]);
     }
 
